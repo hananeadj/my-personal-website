@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+:root{
+    --primary-color: #fafafa;
+    --secndary-color: #1A1A1A;
+    --paragraph: #4a4a4d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: var(--primary-color);
+}
+
+h1 ,
+h2, h3{
+    font-family: "Syne", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*Tablet responsive*/
+
+@media (max-width: 768px){
+
+    header{
+        height: 70vh;
+    }
+
+    header ul li .btn{
+        display: none;
+    }  
+
+    header nav ul li .unique{
+        display: block;
+    }
+
+    header .navbar nav{
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul{
+        margin-top: 20px;
+    }
+
+    header nav ul li a{
+        margin: 0 8px; 
+    }
+
+    header .header-content .btn-arrow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 32px;
+    }
+
+    header .fa-solid{
+        
+        font-size: 30px;
+        
+    }
+
+    /*About*/
+
+    #about{
+        padding: 8rem 0 4rem;
+    }
+
+    #about .about-screen{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        row-gap: 1.5rem;
+        padding: 32px;
+        background-color: #F9F9F9;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.14);
+        border-radius: 4px;
+        
+}
+
+    #about .about-screen h3{
+        font-size: 48px;
+    }
+
+    #about .about-screen img{
+        width: 150px;
+    }
+
+    #about .about-screen p{
+        line-height: 1.6rem;
+        color: var(--paragraph);
+    }
+
+    #about .about-screen span{
+        color: var(--secndary-color);
+        font-size: 18px;
+        font-weight: 700;
+        font-family: "Syne", sans-serif;
+    }
+
+    #about .circle{
+    display: none;
+    }
+
+    #about h2{
+    display: none;   
+    }
+
+    /*work*/
+    #my-work .row{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 4rem;
+    }
+
+    /*contact*/
+
+    #contact .row{
+        padding: 6rem 0 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contact .col-2 .infos{
+        display: none;
+    
+    }
+
+    #contact .row .col-1 .send-message{
+        position: absolute;
+        left: 32px;
+        padding: 1.5rem;
+        
+    }
+}
+
+/*Mobile*/
+
+@media (max-width: 528px){
+    header{
+        height: 72vh;
+    }
+
+    .blur{
+        position: absolute;
+        right: 30px;
+        top: 78px;
+    }
+    
+    .blur-img{
+        width: 200px;
+    }
+
+    header .header-content h1{
+        line-height: 48px;
+        font-size: 36px;
+
+    }
+
+    /*About*/
+    #about .about-screen{
+        width: 100%;
+}
+
+#about .about-screen h3{
+    font-size: 48px;
+}
+
+#about .about-screen img{
+    width: 150px;
+}
+
+#about .about-screen p{
+    line-height: 1.6rem;
+    color: var(--paragraph);
+}
+
+#about .about-screen h3{
+        font-size: 32px;
+    }
+
+    #about .about-screen img{
+        width: 120px;
+    }
+
+    #about .about-screen p{
+        line-height: 1.6rem;
+        color: var(--paragraph);
+    }
+
+    /*work*/
+    #my-work h2, #contact h2{
+        font-size: 32px;
+
+        }
+
+        #my-work hr{
+            width: 100px;
+        }
+
+        #my-work .row{
+            grid-template-columns: 1fr;
+            row-gap: 4rem;
+        }
+
+        /*contact*/
+        #contact hr{
+        width: 160px;
+        }
+
+        #contact .row{
+            padding: 4rem 0 0;
+            grid-template-columns: 1fr;
+            height: 580px;
+        }
+
+        #contact .row .col-1 .send-message{
+            width: 300px;
+            top:  16px;
+            left: 12px; 
+        }
+
+        
+#contact .input-col .input{
+    width: 240px;
+}
+
+        #contact .row .col-1 .input-row{
+            display: flex;
+            flex-direction: column;
+            column-gap: 2rem;
+            }
+
+
+        
+}
